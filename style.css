@@ -1,0 +1,13 @@
+/* css/style.css */
+
+/* Enables smooth browser physics when a user scrolls down to anchor links (like #pricing) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Accessibility optimization: adds clear focus ring borders for users navigating with keyboards */
+button:focus-visible, 
+a:focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}

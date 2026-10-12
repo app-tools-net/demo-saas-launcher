@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your SaaS App - Launch Faster</title>
+    
+    <!-- CORE STYLING ENGINE: Loads the official Tailwind script directly into the browser -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link to custom global style overrides -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+        <!-- CUSTOMIZATION: Change 'SaaSLogo' to your actual app name or swap this text for an img tag -->
+        <div class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+            SaaSLogo
+        </div>
+        <div class="space-x-6 hidden sm:flex text-sm text-slate-400">
+            <a href="#features" class="hover:text-white transition-colors">Features</a>
+            <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+        </div>
+        <a href="#pricing" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium py-2 px-4 rounded-xl transition-colors">Get Started</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
+        <!-- CUSTOMIZATION: Update your main hook headline here -->
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+            The ultimate headline for your <span class="text-indigo-400">software product</span>
+        </h1>
+        <!-- CUSTOMIZATION: Update your value proposition subheadline here -->
+        <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-xl mx-auto">
+            Write a punchy subheadline describing exactly how your app solves a painful problem for your specific niche audience.
+        </p>
+        <div class="mt-10">
+            <a href="#pricing" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 px-8 rounded-xl text-lg transition-colors inline-block shadow-lg shadow-indigo-950/50">
+                Start Your Free Trial
+            </a>
+        </div>
+    </header>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-900">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white">Everything you need to succeed</h2>
+            <p class="text-slate-400 mt-2">Stop engineering things from scratch. Focus on your business core.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- CUSTOMIZATION: Edit these feature blocks to match your application functionality -->
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="bg-indigo-950 text-indigo-400 w-10 h-10 rounded-xl flex items-center justify-center font-bold mb-4">01</div>
+                <h3 class="text-lg font-bold text-white mb-2">Automated Dashboard</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Give users immediate visibility into their accounts with a beautifully structured telemetry layout view component.</p>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="bg-indigo-950 text-indigo-400 w-10 h-10 rounded-xl flex items-center justify-center font-bold mb-4">02</div>
+                <h3 class="text-lg font-bold text-white mb-2">Secure Payments</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Integrated out-of-the-box billing setup handles subscriptions, cards, and automated tax collections worldwide.</p>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="bg-indigo-950 text-indigo-400 w-10 h-10 rounded-xl flex items-center justify-center font-bold mb-4">03</div>
+                <h3 class="text-lg font-bold text-white mb-2">Blazing Fast Speed</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Built using raw native vanilla code to deliver near-zero layout shifting and elite responsive mobile scores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-900 text-center">
+        <h2 class="text-3xl font-bold text-white mb-2">Simple, transparent pricing</h2>
+        <p class="text-slate-400 mb-12">Choose the plan that fits your execution pace.</p>
+        
+        <div class="bg-slate-900/40 border border-indigo-500/30 rounded-3xl p-8 max-w-md mx-auto shadow-xl shadow-indigo-950/20">
+            <h3 class="text-xl font-bold text-white">Pro Access</h3>
+            <!-- CUSTOMIZATION: Set your product price point here -->
+            <div class="mt-4 text-4xl font-extrabold text-white">$19 <span class="text-sm font-normal text-slate-400">/ month</span></div>
+            <p class="mt-4 text-sm text-slate-400">Complete access to all application workflows and continuous features upgrades.</p>
+            
+            <!-- INTEGRATION NOTE: The data-plan attribute hooks into your /js/app.js file to handle the payment logic -->
+            <button data-plan="pro-monthly" class="mt-8 w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-3 px-4 rounded-xl transition-all cursor-pointer">
+                Subscribe to Pro Plan
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 max-w-6xl mx-auto py-8 text-center text-xs text-slate-600">
+        &copy; Your Company. All rights reserved.
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
